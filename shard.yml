@@ -1,0 +1,9 @@
+name: termspinner
+version: 0.1.0
+
+authors:
+  - elio <elioubr@gmail.com>
+
+crystal: 0.29.0
+
+license: MIT
