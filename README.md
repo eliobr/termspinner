@@ -42,6 +42,7 @@ spi.start("Doing something...")
 sleep(2.seconds)
 spi.stop("⚠️  Some custom message".colorize(:yellow).to_s)
 ```
+![](https://raw.githubusercontent.com/eliobr/termspinner/master/example.svg?sanitize=true)
 
 ## Contributing
 
