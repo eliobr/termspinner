@@ -8,7 +8,7 @@ A simple terminal spinner written in crystal
 
    ```yaml
    dependencies:
-     spinner:
+     termspinner:
        github: eliobr/termspinner
    ```
 
