@@ -1,7 +1,7 @@
 require "colorize"
 
 module Spinner
-  VERSION = "0.1.0"
+  VERSION = "0.1.1"
 
   class Spinner
     @@frames = ["⣾", "⣽", "⣻", "⢿", "⡿", "⣟", "⣯", "⣷"]
@@ -16,9 +16,7 @@ module Spinner
 
     # Show the spinner
     def start(msg : String = "")
-      if msg.size > 0
-        @message = msg
-      end
+      @message = msg if msg.size > 0
       self.hideCursor
       @timer.start(50.milliseconds) do
         print("\r")
@@ -29,7 +27,7 @@ module Spinner
 
     def message=(msg : String)
       @message = msg
-      self.clear
+      self.clear if msg.size < @message.size
     end
 
     # Stop the spinner and show msg in red with ✗ prepended
